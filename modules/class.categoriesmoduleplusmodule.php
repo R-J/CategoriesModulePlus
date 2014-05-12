@@ -40,6 +40,9 @@ class CategoriesModulePlusModule extends Gdn_Module  {
             $this->Data['ShowAllCategoriesPref'] = $Session->GetPreference('ShowAllCategories');
 
             $this->Data['Url'] = Gdn::Request()->Path();
+            if ($this->Data['Url'] == '') {
+                $this->Data['Url'] = '/';
+            }            
             $this->Data['ShowAllCategoriesUrl'] = Gdn::Request()->Url('categories/settoggle?ShowAllCategories=true&Target='.$this->Data['Url']);
             $this->Data['ShowFollowedCategoriesUrl'] = Gdn::Request()->Url('categories/settoggle?ShowAllCategories=false&Target='.$this->Data['Url']);
 
