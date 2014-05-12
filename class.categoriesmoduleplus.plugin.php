@@ -3,7 +3,7 @@
 $PluginInfo['CategoriesModulePlus'] = array(
     'Name' => 'CategoriesModule+',
     'Description' => 'Extended version of the category module that lets you hide/unhide categories and switch from viewing only followed categories to all categories.',
-    'Version' => '0.2',
+    'Version' => '0.2.1',
     'MobileFriendly' => TRUE,
     'RequiredApplications' => array('Vanilla' => '2.1'),
     'Author' => 'Robin',
